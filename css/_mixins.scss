@@ -1,0 +1,32 @@
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==tablet {
+    @media (min-width: 481px) and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint==laptop {
+    @media (min-width: 769px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile {
+    @media (min-width: 320px) and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media (min-width: 1025px) and (max-width: 1200px) {
+      @content;
+    }
+  }
+  //This just bugg's me, but i just did a bad job on nav bar..
+  @if $breakpoint==largeDesktop {
+    @media (min-width: 1201px) and (max-width: 1420px) {
+      @content;
+    }
+  }
+}

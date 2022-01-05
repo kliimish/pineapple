@@ -1,0 +1,24 @@
+.succsess {
+  display: none;
+  grid-row: 1/4;
+  grid-column: 3/10;
+  align-self: center;
+  padding-bottom: 30px;
+  padding: 0 0 0 1rem;
+
+  & h2 {
+    font-size: 2rem;
+    color: $black;
+    margin: 2px;
+  }
+  & p {
+    padding: 10px 0px 10px 0px;
+    line-height: 1.5;
+  }
+  & .soc-media {
+    width: 100%;
+    padding: 4rem 0px 0px 0px;
+    border-top: 2px solid $light_gray;
+    justify-content: space-around;
+  }
+}

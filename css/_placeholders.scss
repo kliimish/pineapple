@@ -1,0 +1,38 @@
+//CREATES BASE ROUND CIRCLE FOR soc media icons
+%base {
+  position: relative;
+  height: 44px;
+  width: 44px;
+  border: 2px solid $icon_color;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+//ICON STYLING
+%icon {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  color: $gray;
+  text-align: center;
+  font-size: 14px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+%link {
+  color: $gray;
+  font-size: 16px;
+  font-family: $font_secondary;
+
+  &:hover {
+    color: $link_hover;
+    text-decoration: underline;
+  }
+
+  & a:visited {
+    color: $link_pressed;
+  }
+}
